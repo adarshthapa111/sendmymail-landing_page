@@ -7,6 +7,7 @@ const LINKS = [
   { label: 'How it works', href: '#how', id: 'how' },
   { label: 'Who it’s for', href: '#audience', id: 'audience' },
   { label: 'Pricing', href: '#pricing', id: 'pricing' },
+  { label: 'Contact', href: '#contact', id: 'contact' },
 ]
 
 export function Nav() {

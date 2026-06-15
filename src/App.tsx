@@ -12,6 +12,7 @@ import { Integrations } from './components/Integrations'
 import { Stats } from './components/Stats'
 import { Pricing } from './components/Pricing'
 import { FAQ } from './components/FAQ'
+import { Contact } from './components/Contact'
 import { CTA } from './components/CTA'
 import { Footer } from './components/Footer'
 
@@ -38,6 +39,7 @@ export function App() {
         <Stats />
         <Pricing />
         <FAQ />
+        <Contact />
         <CTA />
       </main>
       <Footer />

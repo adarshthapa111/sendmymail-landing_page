@@ -3,7 +3,7 @@ import { useState } from 'react'
 /* Lead capture. Set FORM_ENDPOINT to a real collector (Formspree, a backend
    route, Resend audience, etc.) to receive signups. Until then it falls back
    to storing locally + a success state so the flow works end-to-end. */
-const FORM_ENDPOINT = '' // e.g. 'https://formspree.io/f/xxxx'
+const FORM_ENDPOINT = 'https://formspree.io/f/xojzrpya'
 
 const EMAIL_RE = /^[^@\s]+@[^@\s]+\.[^@\s]+$/
 
@@ -20,11 +20,12 @@ export function CTA() {
     setStatus('sending')
     try {
       if (FORM_ENDPOINT) {
-        await fetch(FORM_ENDPOINT, {
+        const res = await fetch(FORM_ENDPOINT, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-          body: JSON.stringify({ email }),
+          body: JSON.stringify({ email, source: 'landing-waitlist' }),
         })
+        if (!res.ok) throw new Error('submission failed')
       } else {
         const key = 'smm_waitlist'
         const list = JSON.parse(localStorage.getItem(key) || '[]')
