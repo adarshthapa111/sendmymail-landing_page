@@ -8,6 +8,7 @@ import { Gallery } from './components/Gallery'
 import { Testimonial } from './components/Testimonial'
 import { HowItWorks } from './components/HowItWorks'
 import { Audience } from './components/Audience'
+import { Integrations } from './components/Integrations'
 import { Stats } from './components/Stats'
 import { Pricing } from './components/Pricing'
 import { FAQ } from './components/FAQ'
@@ -33,6 +34,7 @@ export function App() {
         <Testimonial />
         <HowItWorks />
         <Audience />
+        <Integrations />
         <Stats />
         <Pricing />
         <FAQ />

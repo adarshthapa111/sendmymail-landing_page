@@ -26,19 +26,33 @@ export function HowItWorks() {
         title={<>From signup to sent in <span className="grad-text">three steps</span></>}
       />
 
-      <div className="auto-grid" style={{ marginTop: 50 }}>
-        {STEPS.map((s, i) => (
-          <div key={s.n} className="glass lift reveal" data-reveal style={{ padding: 32, transitionDelay: `${i * 80}ms` }}>
-            <span
-              className="grad-text"
-              style={{ fontFamily: 'var(--font-display)', fontSize: 44, fontWeight: 600, lineHeight: 1, display: 'inline-block' }}
-            >
-              {s.n}
-            </span>
-            <h3 style={{ fontSize: 21, marginTop: 18 }}>{s.title}</h3>
-            <p style={{ fontSize: 15.5, color: 'var(--color-muted)', marginTop: 10 }}>{s.body}</p>
-          </div>
-        ))}
+      <div className="steps-wrap" style={{ marginTop: 50 }}>
+        <div className="steps-line" />
+        <div className="auto-grid">
+          {STEPS.map((s, i) => (
+            <div key={s.n} className="glass lift reveal" data-reveal style={{ position: 'relative', zIndex: 1, padding: 32, transitionDelay: `${i * 80}ms` }}>
+              <span
+                className="grid place-items-center"
+                style={{
+                  width: 52,
+                  height: 52,
+                  borderRadius: '50%',
+                  background: 'linear-gradient(150deg, var(--color-primary-glow), var(--color-primary))',
+                  color: '#fff',
+                  fontFamily: 'var(--font-display)',
+                  fontWeight: 700,
+                  fontSize: 19,
+                  boxShadow: '0 12px 24px -10px var(--color-primary)',
+                  border: '3px solid var(--color-card)',
+                }}
+              >
+                {s.n}
+              </span>
+              <h3 style={{ fontSize: 21, marginTop: 18 }}>{s.title}</h3>
+              <p style={{ fontSize: 15.5, color: 'var(--color-muted)', marginTop: 10 }}>{s.body}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   )
