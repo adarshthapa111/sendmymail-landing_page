@@ -66,7 +66,7 @@ export function Nav() {
           </nav>
 
           <div className="flex items-center" style={{ gap: 8 }}>
-            <a href="#" className="btn btn-dark" style={{ padding: '10px 20px' }}>
+            <a href="#waitlist" className="btn btn-dark" style={{ padding: '10px 20px' }}>
               Start free
             </a>
             <button
@@ -101,7 +101,7 @@ export function Nav() {
                   {l.label}
                 </a>
               ))}
-              <a href="#" className="btn btn-dark" style={{ marginTop: 8, width: '100%' }} onClick={() => setOpen(false)}>
+              <a href="#waitlist" className="btn btn-dark" style={{ marginTop: 8, width: '100%' }} onClick={() => setOpen(false)}>
                 Start free
               </a>
             </div>

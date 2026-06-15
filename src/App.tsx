@@ -10,6 +10,7 @@ import { HowItWorks } from './components/HowItWorks'
 import { Audience } from './components/Audience'
 import { Stats } from './components/Stats'
 import { Pricing } from './components/Pricing'
+import { FAQ } from './components/FAQ'
 import { CTA } from './components/CTA'
 import { Footer } from './components/Footer'
 
@@ -34,6 +35,7 @@ export function App() {
         <Audience />
         <Stats />
         <Pricing />
+        <FAQ />
         <CTA />
       </main>
       <Footer />

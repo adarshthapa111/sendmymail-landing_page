@@ -73,7 +73,7 @@ export function Hero() {
           </p>
 
           <div className="reveal flex items-center justify-center flex-wrap" data-reveal style={{ gap: 12, marginTop: 30 }}>
-            <a href="#" className="btn btn-primary" style={{ fontSize: 16, padding: '15px 30px' }}>
+            <a href="#waitlist" className="btn btn-primary" style={{ fontSize: 16, padding: '15px 30px' }}>
               Start free — no card
             </a>
             <a href="#how" className="btn btn-ghost" style={{ fontSize: 16, padding: '15px 26px' }}>

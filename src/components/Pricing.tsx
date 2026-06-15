@@ -102,7 +102,7 @@ export function Pricing() {
               ))}
             </ul>
             <a
-              href="#"
+              href="#waitlist"
               className={t.featured ? 'btn btn-primary' : 'btn btn-ghost'}
               style={{ width: '100%' }}
             >
