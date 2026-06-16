@@ -89,7 +89,7 @@ export function Hero() {
         {/* ── Centered product ── */}
         <div className="reveal relative" data-reveal ref={ref} style={{ maxWidth: 1000, marginTop: 56, marginInline: 'auto' }}>
           <div style={{ transform: `translateY(${-offset}px)` }}>
-            <Frame src="/assets/dashboard.png" alt="SendMyMail multi-client dashboard" />
+            <Frame src="/assets/dashboard.webp" alt="SendMyMail multi-client dashboard" eager />
           </div>
 
           <span className="float-chip" style={{ top: -16, left: -14, animationDelay: '0s' }}>

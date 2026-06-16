@@ -89,7 +89,7 @@ export function Features() {
                   transition: 'border-color 0.45s ease',
                 }}
               >
-                <img src="/assets/editor.png" alt="The email editor canvas" style={{ width: '100%', display: 'block' }} />
+                <img src="/assets/editor.webp" alt="The email editor canvas" loading="lazy" decoding="async" style={{ width: '100%', display: 'block' }} />
                 {/* hue blend recolours the email's accents to the active brand,
                     leaving greys untouched — the live "re-skin" */}
                 <span

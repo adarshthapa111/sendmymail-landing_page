@@ -15,7 +15,7 @@ const ROWS: Row[] = [
     title: 'Build emails that render everywhere',
     body: 'Drag sections onto a paper-card canvas with hover toolbars and live inline editing. Behind the scenes it compiles to real MJML → HTML, so your email stays responsive in Gmail, Outlook and Apple Mail.',
     bullets: ['26 ready-made sections', 'Inline text + image editing', 'Server-compiled, pixel-true output'],
-    img: '/assets/editor.png',
+    img: '/assets/editor.webp',
     alt: 'The drag-and-drop MJML editor',
   },
   {
@@ -23,7 +23,7 @@ const ROWS: Row[] = [
     title: 'Every client, perfectly on brand',
     body: 'Store each client’s palette, typeface and logo once. Drop any section and it arrives already styled to that brand. Switch the active client and the entire canvas rebrands in a single gesture.',
     bullets: ['Colors, font & logo per client', 'Sections inherit the brand automatically', 'One click to switch brands'],
-    img: '/assets/brandkit.png',
+    img: '/assets/brandkit.webp',
     alt: 'Per-client brand kit settings',
   },
   {
@@ -31,7 +31,7 @@ const ROWS: Row[] = [
     title: 'Proof your clients can read',
     body: 'Turn raw opens and clicks into a clean, per-client report you can send straight to the brand — the polished proof that keeps the retainer renewing month after month.',
     bullets: ['One-click per-client reports', 'Opens, clicks & deliverability', 'Branded, client-ready output'],
-    img: '/assets/reports.png',
+    img: '/assets/reports.webp',
     alt: 'Per-client engagement reports',
   },
 ]

@@ -1,5 +1,7 @@
-/* A browser-chrome frame around a product screenshot. */
-export function Frame({ src, alt }: { src: string; alt: string }) {
+/* A browser-chrome frame around a product screenshot.
+   `eager` is for the above-the-fold hero shot (the LCP image); everything
+   else lazy-loads + decodes async so it never blocks first paint. */
+export function Frame({ src, alt, eager = false }: { src: string; alt: string; eager?: boolean }) {
   return (
     <div className="frame">
       <div className="frame__bar">
@@ -18,7 +20,13 @@ export function Frame({ src, alt }: { src: string; alt: string }) {
           }}
         />
       </div>
-      <img src={src} alt={alt} />
+      <img
+        src={src}
+        alt={alt}
+        loading={eager ? 'eager' : 'lazy'}
+        decoding="async"
+        {...(eager ? { fetchPriority: 'high' as const } : {})}
+      />
     </div>
   )
 }
