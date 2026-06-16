@@ -10,6 +10,7 @@ const COLS = [
       { label: 'Integrations', href: '#integrations' },
       { label: 'Pricing', href: '#pricing' },
       { label: 'FAQ', href: '#faq' },
+      { label: 'Guides', href: '/blog/' },
     ],
   },
   {

@@ -1,0 +1,123 @@
+/* Shared styles for SendMyMail static content pages (blog/guides).
+   Mirrors the app's warm theme so content reads as one brand. */
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700&display=swap');
+@import url('https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600&display=swap');
+
+:root {
+  --bg: #faf6ef;
+  --card: #fff;
+  --surface: #f2eee4;
+  --ink: #2b2620;
+  --muted: #6e6860;
+  --soft: #9c958a;
+  --line: rgba(43, 38, 32, 0.11);
+  --line-soft: rgba(43, 38, 32, 0.06);
+  --primary: #c56a33;
+  --primary-dark: #a8521f;
+  --primary-light: #f5e7d9;
+  --primary-ink: #964b22;
+  --primary-glow: #e08a4e;
+  --display: 'Bricolage Grotesque', sans-serif;
+  --body: 'General Sans', 'Hanken Grotesk', system-ui, sans-serif;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--body);
+  font-size: 17px;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: var(--primary); text-decoration: none; }
+a:hover { text-decoration: underline; }
+img { max-width: 100%; display: block; }
+
+.wrap { width: 100%; max-width: 720px; margin-inline: auto; padding-inline: 24px; }
+
+/* header */
+.bhead {
+  position: sticky; top: 0; z-index: 10;
+  background: rgba(250, 246, 239, 0.85);
+  backdrop-filter: saturate(140%) blur(10px);
+  border-bottom: 1px solid var(--line);
+}
+.bhead-in {
+  max-width: 1040px; margin-inline: auto; padding: 14px 24px;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.brand { display: inline-flex; align-items: center; gap: 10px; }
+.brand .mark {
+  width: 30px; height: 30px; border-radius: 8px; background: var(--primary);
+  display: grid; place-items: center; box-shadow: 0 1px 0 var(--primary-dark);
+}
+.brand b { font-family: var(--display); font-size: 18px; font-weight: 600; color: var(--ink); }
+.btn-primary {
+  font-family: var(--body); font-weight: 600; font-size: 14.5px; color: #fff;
+  background: linear-gradient(180deg, var(--primary-glow), var(--primary));
+  border: 1px solid var(--primary-dark); border-radius: 11px; padding: 9px 18px;
+  box-shadow: 0 8px 18px -10px rgba(197, 106, 51, 0.6);
+}
+.btn-primary:hover { text-decoration: none; background: var(--primary-dark); }
+
+/* article */
+article { padding: 56px 0 40px; }
+.eyebrow {
+  font-size: 12px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--primary);
+}
+.crumbs { font-size: 14px; color: var(--soft); margin-bottom: 22px; }
+h1 {
+  font-family: var(--display); font-size: clamp(32px, 5vw, 48px); line-height: 1.08;
+  letter-spacing: -0.025em; margin: 12px 0 0; color: var(--ink);
+}
+.meta { font-size: 14px; color: var(--soft); margin-top: 16px; }
+.lede { font-size: 20px; color: var(--muted); margin-top: 24px; line-height: 1.6; }
+article h2 {
+  font-family: var(--display); font-size: 26px; letter-spacing: -0.02em;
+  margin: 40px 0 12px; color: var(--ink);
+}
+article h3 { font-size: 19px; margin: 28px 0 8px; color: var(--ink); }
+article p { margin: 14px 0; }
+article ul, article ol { margin: 14px 0; padding-left: 22px; }
+article li { margin: 8px 0; }
+article strong { color: var(--ink); }
+blockquote {
+  margin: 24px 0; padding: 16px 22px; border-left: 3px solid var(--primary);
+  background: var(--surface); border-radius: 0 12px 12px 0; color: var(--muted);
+}
+code {
+  font-family: ui-monospace, monospace; font-size: 0.9em; background: var(--surface);
+  padding: 2px 6px; border-radius: 5px; color: var(--primary-ink);
+}
+.callout {
+  margin: 32px 0; padding: 24px; border-radius: 16px; border: 1px solid var(--line);
+  background: var(--card);
+  box-shadow: 0 2px 6px -2px rgba(43, 38, 32, 0.08);
+}
+.callout h3 { margin-top: 0; }
+
+/* blog index */
+.posts { display: flex; flex-direction: column; gap: 16px; margin-top: 36px; }
+.post-card {
+  display: block; padding: 26px; border-radius: 18px; background: var(--card);
+  border: 1px solid var(--line); box-shadow: 0 2px 6px -2px rgba(43, 38, 32, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.post-card:hover { text-decoration: none; transform: translateY(-3px); box-shadow: 0 16px 36px -20px rgba(43, 38, 32, 0.3); }
+.post-card .ptag { font-size: 12px; font-weight: 600; color: var(--primary); letter-spacing: 0.04em; }
+.post-card h2 { font-family: var(--display); font-size: 23px; margin: 8px 0 0; color: var(--ink); letter-spacing: -0.015em; }
+.post-card p { color: var(--muted); font-size: 15.5px; margin: 8px 0 0; }
+.post-card .pmeta { font-size: 13px; color: var(--soft); margin-top: 12px; }
+
+/* footer */
+.bfoot { border-top: 1px solid var(--line); margin-top: 40px; background: var(--card); }
+.bfoot-in {
+  max-width: 1040px; margin-inline: auto; padding: 34px 24px;
+  display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 14px;
+  font-size: 14px; color: var(--soft);
+}
+.bfoot a { color: var(--muted); }

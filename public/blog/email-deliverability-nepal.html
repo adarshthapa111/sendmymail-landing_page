@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<title>Email Deliverability in Nepal: How to Land in Gmail & Outlook (2026) — SendMyMail</title>
+<meta name="description" content="A practical guide to email deliverability for Nepali businesses — set up SPF, DKIM and DMARC, use a verified sending domain, and stop your emails landing in spam in Gmail and Outlook." />
+<meta name="theme-color" content="#C56A33" />
+<link rel="canonical" href="https://sendmymail.vercel.app/blog/email-deliverability-nepal.html" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Email Deliverability in Nepal: How to Land in Gmail & Outlook" />
+<meta property="og:description" content="Set up SPF, DKIM and DMARC, use a verified domain, and keep your emails out of spam — a practical guide for Nepali businesses." />
+<meta property="og:url" content="https://sendmymail.vercel.app/blog/email-deliverability-nepal.html" />
+<meta property="og:image" content="https://sendmymail.vercel.app/og-image.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="stylesheet" href="/blog/blog.css" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Email Deliverability in Nepal: How to Land in Gmail & Outlook",
+  "description": "A practical guide to email deliverability for Nepali businesses — SPF, DKIM, DMARC, verified sending domains and list hygiene.",
+  "author": { "@type": "Organization", "name": "SendMyMail" },
+  "publisher": { "@type": "Organization", "name": "SendMyMail", "logo": { "@type": "ImageObject", "url": "https://sendmymail.vercel.app/favicon.svg" } },
+  "datePublished": "2026-06-16",
+  "image": "https://sendmymail.vercel.app/og-image.png",
+  "mainEntityOfPage": "https://sendmymail.vercel.app/blog/email-deliverability-nepal.html"
+}
+</script>
+</head>
+<body>
+<header class="bhead">
+  <div class="bhead-in">
+    <a class="brand" href="/">
+      <span class="mark"><svg width="17" height="17" viewBox="0 0 24 24" fill="none"><path d="M3 6.5A1.5 1.5 0 0 1 4.5 5h15A1.5 1.5 0 0 1 21 6.5v11A1.5 1.5 0 0 1 19.5 19h-15A1.5 1.5 0 0 1 3 17.5z" stroke="#fff" stroke-width="1.8"/><path d="m4 7 8 6 8-6" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      <b>SendMyMail</b>
+    </a>
+    <a class="btn-primary" href="/#waitlist">Start free</a>
+  </div>
+</header>
+
+<main class="wrap">
+  <article>
+    <div class="crumbs"><a href="/">Home</a> · <a href="/blog/">Guides</a></div>
+    <span class="eyebrow">Deliverability</span>
+    <h1>Email deliverability in Nepal: how to land in Gmail &amp; Outlook</h1>
+    <div class="meta">Updated June 2026 · 7 min read</div>
+
+    <p class="lede">You can write the perfect email — but if it lands in spam, none of it matters. Here's how Nepali businesses get into the inbox where their customers actually read: Gmail and Outlook.</p>
+
+    <p>Most Nepali recipients open email in <strong>Gmail</strong> or <strong>Outlook/Hotmail</strong>. Both decide whether you reach the inbox using the same signals — and most senders in Nepal fail on a few basics that are completely fixable. This guide walks through them in plain language.</p>
+
+    <h2>1. Stop sending from a free address</h2>
+    <p>If you send marketing email "from" a <code>@gmail.com</code> or <code>@hotmail.com</code> address, Gmail now actively rejects or spam-folders it — because you can't prove you own that address. Send from <strong>your own domain</strong> (<code>hello@yourbusiness.com.np</code>) instead. This is the single biggest fix.</p>
+
+    <h2>2. Set up SPF, DKIM and DMARC</h2>
+    <p>These three DNS records tell Gmail and Outlook that your email is genuinely from you and hasn't been forged. As of 2024, Gmail and Yahoo <strong>require all three</strong> for anyone sending in volume.</p>
+    <ul>
+      <li><strong>SPF</strong> — lists which servers are allowed to send for your domain.</li>
+      <li><strong>DKIM</strong> — cryptographically signs each email so it can't be tampered with.</li>
+      <li><strong>DMARC</strong> — tells inbox providers what to do if SPF/DKIM fail, and gives you reports.</li>
+    </ul>
+    <p>If that sounds technical, it is — but it's a one-time setup. A good sending platform generates the exact records for you to paste into your DNS.</p>
+
+    <blockquote>Rule of thumb: no authenticated domain = straight to spam. Get SPF + DKIM + DMARC right before you send a single campaign.</blockquote>
+
+    <h2>3. Warm up and keep your list clean</h2>
+    <p>Inbox providers watch how recipients react. A few habits protect your reputation:</p>
+    <ul>
+      <li><strong>Only email people who opted in.</strong> Bought or scraped lists are the fastest way to the spam folder.</li>
+      <li><strong>Remove hard bounces and inactive contacts.</strong> Sending to dead addresses signals "spammer."</li>
+      <li><strong>Start small, grow gradually.</strong> Don't blast 50,000 emails from a brand-new domain on day one.</li>
+      <li><strong>Make unsubscribing easy.</strong> A visible unsubscribe link means fewer "mark as spam" clicks — which hurt far more.</li>
+    </ul>
+
+    <h2>4. Write like a human, not a billboard</h2>
+    <p>Spam filters read your content too. Avoid ALL-CAPS subject lines, walls of <code>!!!</code>, "FREE!!!" language, and image-only emails with no text. A clean balance of text and images, a real subject line, and a genuine from-name all help.</p>
+
+    <h2>5. Measure, then fix</h2>
+    <p>You can't improve what you can't see. Track your <strong>inbox placement, open rate, bounce rate and complaint rate</strong> per campaign. If opens suddenly drop, deliverability is usually the culprit — not your copy.</p>
+
+    <div class="callout">
+      <h3>How SendMyMail handles this for you</h3>
+      <p>SendMyMail is built for Nepali inboxes. We generate your SPF/DKIM/DMARC records, send over verified domains, keep your lists clean automatically, and show inbox placement per campaign — targeting ~96% delivery to Gmail and Outlook. No deliverability degree required.</p>
+      <p style="margin-top:16px;"><a class="btn-primary" href="/#waitlist">Get early access →</a></p>
+    </div>
+
+    <h2>The short version</h2>
+    <ol>
+      <li>Send from your own domain, never a free address.</li>
+      <li>Authenticate with SPF, DKIM and DMARC.</li>
+      <li>Email only opted-in contacts and prune dead ones.</li>
+      <li>Write naturally and make unsubscribing easy.</li>
+      <li>Track inbox placement and act on it.</li>
+    </ol>
+    <p>Do these and your email will reach the inbox where Nepal actually reads it.</p>
+  </article>
+</main>
+
+<footer class="bfoot">
+  <div class="bfoot-in">
+    <span>© 2026 SendMyMail · Made in Kathmandu 🇳🇵</span>
+    <span><a href="/blog/">All guides</a> · <a href="/#waitlist">Start free</a></span>
+  </div>
+</footer>
+</body>
+</html>

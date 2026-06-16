@@ -5,7 +5,7 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#C56A33" />
-    <link rel="canonical" href="https://sendmymail.np/" />
+    <link rel="canonical" href="https://sendmymail.vercel.app/" />
 
     <title>SendMyMail — Email marketing built for Nepal</title>
     <meta
@@ -22,8 +22,8 @@
       property="og:description"
       content="A drag-and-drop email editor, per-client brand kits and one multi-client dashboard — for Nepali agencies and the brands they serve. NPR billing, eSewa & Khalti ready."
     />
-    <meta property="og:url" content="https://sendmymail.np/" />
-    <meta property="og:image" content="https://sendmymail.np/og-image.png" />
+    <meta property="og:url" content="https://sendmymail.vercel.app/" />
+    <meta property="og:image" content="https://sendmymail.vercel.app/og-image.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:locale" content="en_NP" />
@@ -35,7 +35,75 @@
       name="twitter:description"
       content="Email marketing built for Nepal — for agencies juggling many client brands, and for the brands themselves."
     />
-    <meta name="twitter:image" content="https://sendmymail.np/og-image.png" />
+    <meta name="twitter:image" content="https://sendmymail.vercel.app/og-image.png" />
+
+    <!-- Structured data: Organization + product + FAQ (rich snippets) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://sendmymail.vercel.app/#org",
+            "name": "SendMyMail",
+            "url": "https://sendmymail.vercel.app/",
+            "logo": "https://sendmymail.vercel.app/favicon.svg",
+            "description": "Email marketing built for Nepal — for agencies juggling many client brands, and for the brands themselves.",
+            "areaServed": "NP"
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://sendmymail.vercel.app/#website",
+            "url": "https://sendmymail.vercel.app/",
+            "name": "SendMyMail",
+            "publisher": { "@id": "https://sendmymail.vercel.app/#org" }
+          },
+          {
+            "@type": "SoftwareApplication",
+            "name": "SendMyMail",
+            "applicationCategory": "BusinessApplication",
+            "operatingSystem": "Web",
+            "offers": { "@type": "Offer", "price": "1500", "priceCurrency": "NPR" },
+            "description": "A drag-and-drop email editor, per-client brand kits and one multi-client dashboard — with NPR billing via eSewa, Khalti and IME Pay."
+          },
+          {
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Will my emails actually land in the inbox in Nepal?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Yes. We send over verified domains with proper SPF/DKIM/DMARC and tune deliverability for Gmail and Outlook, where Nepali recipients are — targeting ~96% inbox placement, shown per campaign." }
+              },
+              {
+                "@type": "Question",
+                "name": "Can I migrate from Mailchimp or MailerLite?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Yes — bring your contacts, lists and templates over in an afternoon, and we help. You can also keep your existing ESP connected: SendMyMail can push the compiled email to 40+ platforms." }
+              },
+              {
+                "@type": "Question",
+                "name": "How does billing work — is it really in rupees?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Everything is priced and billed in NPR. Pay with eSewa, Khalti or IME Pay — no USD card — and get PAN-backed VAT invoices." }
+              },
+              {
+                "@type": "Question",
+                "name": "I run one brand, not an agency. Is this overkill?",
+                "acceptedAnswer": { "@type": "Answer", "text": "No. Brand accounts give you the same editor, brand kit and deliverability with the multi-client machinery hidden — a clean single-brand workspace you can grow from later." }
+              },
+              {
+                "@type": "Question",
+                "name": "Is my clients’ data safe and separated?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Each client is its own isolated workspace — separate contacts, domains, branding and reports — and you control who on your team sees what." }
+              },
+              {
+                "@type": "Question",
+                "name": "Is there really a free start with no card?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Yes. Join the early-access list and start building with no credit card; you only pay in NPR once you’re ready to send to your real audience." }
+              }
+            ]
+          }
+        ]
+      }
+    </script>
 
     <!-- Fonts: Bricolage Grotesque (display) + General Sans (body) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
